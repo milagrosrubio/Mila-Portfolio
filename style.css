@@ -1,0 +1,281 @@
+/*Conf de la pg*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Cuerpo y cabecera con sticky*/
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}
+/*Barra de navegacion (3 div)*/
+nav {
+    display: flex;
+    background-color: pink;
+    padding: 1rem;
+}
+nav div {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+.nav-logo {
+    display: flex;
+    justify-content: left;
+    margin: 0 2rem;
+    font-size: 1.5rem;
+}
+.nav-links a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    padding: 0 1rem;
+    color: #333;
+}
+.nav-button {
+    display: flex;
+    justify-content: right;
+    margin: 0 2rem;
+} 
+.nav-button a {
+    text-decoration: none;
+    color: #333;
+
+}
+/*seccion en donde pongo mi nombre y me presento */
+.bienvenida {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.bienvenida h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+/*sobre mi*/
+.sobre-mi h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    padding: 4rem 0 1rem 0;
+}
+.contenido-sobre-mi {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    align-items: stretch;
+    max-width: 800px;
+    margin: 4rem auto 0 auto;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 2rem 1.5rem;
+    min-width: 220px;
+    max-width: 320px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.card-foto {
+    background: none;
+}
+.card-foto img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+/*Tecnologias que uso*/
+.tecnologias h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    padding: 4rem 0 1rem 0;
+}
+
+.contenedor-tecnologias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem 0;
+}
+
+.icono img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.2s;
+}
+
+.icono img:hover {
+    transform: scale(1.1);
+}
+/*Zona de proyectos*/
+.proyectos h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    padding: 4rem 0 1rem 0;
+}
+.proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.proyecto-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    padding: 2rem 2rem 1.5rem 2rem;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.proyecto-card h2 {
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+}
+
+.img-proyecto {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.tecnologias-proyecto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+}
+
+.tecnologias-proyecto span {
+    background: #ffe4ec;
+    color: #333;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.95rem;
+}
+
+.btn-proyecto {
+    display: inline-block;
+    background: #ff69b4;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-proyecto:hover {
+    background: #e055a1;
+}
+/*Contacto formulario*/
+.contacto h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    padding: 4rem 0 1rem 0;
+}
+.form-contacto {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-contacto label {
+    font-weight: 600;
+    color: #6a1a71;
+    margin-bottom: 0.3rem;
+    text-align: left;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+    border: 1px solid #ffe4ec;
+    border-radius: 8px;
+    padding: 0.7rem;
+    font-size: 1rem;
+    background: #f9f6fa;
+    color: #333;
+    resize: none;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.form-contacto input:focus,
+.form-contacto textarea:focus {
+    border: 1.5px solid #ff69b4;
+}
+
+.form-contacto button {
+    background: #ff69b4;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 0.5rem;
+}
+
+.form-contacto button:hover {
+    background: #e055a1;
+}
+/*Footer*/
+.footer {
+  background-color: #fff0f6;
+  padding: 1rem 1rem;
+  text-align: center;
+  color: #444;
+  font-size: 0.9rem;
+  border-top: 1px solid #f2d9e6;
+  margin-top: 2rem;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 -2px 8px rgba(181, 79, 178, 0.08);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

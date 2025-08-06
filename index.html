@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--cabecera y barra de navegacion-->
+    <header>
+        <nav>
+            <div class="nav-logo">MRF</div>
+            <div class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#tecnologias">Tecnologías</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            <div class="nav-button">
+                <a href="docs/MiCV.pdf">Descargar CV</a>
+            </div>
+        </nav>
+    </header>
+    <!--Contenido principal-->
+    <main>
+        <!--bienvenida nombre grande-->
+        <section id="inicio" class="bienvenida">
+            <h1>Hola, soy Milagros Rubio</h1>
+            <p>Desarrolladora web apasionada por la tecnología.</p>
+        </section>
+        <!--Cartas de sobre mi jeje-->
+        <section id="sobre-mi" class="sobre-mi">
+            <h1>Sobre mí</h1>
+            <div class="contenido-sobre-mi">
+                <div class="card card-foto">
+                    <img src="" alt="">
+                </div>
+                <div class="card card-intro">
+                    <h3>¿Quién soy?</h3>
+                    <p>breve descri de lo q soy</p>
+                </div>
+                <div class="card card-estudios">
+                    <h3>Estudios</h3>
+                    <ul>
+                        <li>gs daw breve explicacion</li>
+                    </ul>
+                </div>
+                <div class="card card-habilidades">
+                    <h3>Habilidades</h3>
+                    <ul>
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>agregar mas</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--Tecnologias-->
+        <section id="tecnologias" class="tecnologias">
+            <h1>Tecnologías que uso</h1>
+            <div class="contenedor-tecnologias">
+                <div class="icono"><img src="img/tecnologias/bootstrap.png" alt="Bootstrap" title="Bootstrap"></div>
+                <div class="icono"><img src="img/tecnologias/git.png" alt="Git" title="Git"></div>
+                <div class="icono"><img src="img/tecnologias/github.png" alt="GitHub" title="GitHub"></div>
+                <div class="icono"><img src="img/tecnologias/html.png" alt="HTML" title="HTML"></div>
+                <div class="icono"><img src="img/tecnologias/css.png" alt="CSS" title="CSS"></div>
+                <div class="icono"><img src="img/tecnologias/js.png" alt="JavaScript" title="JavaScript"></div>
+                <div class="icono"><img src="img/tecnologias/java.png" alt="Java" title="Java"></div>
+                <div class="icono"><img src="img/tecnologias/php.png" alt="PHP" title="PHP"></div>
+                <div class="icono"><img src="img/tecnologias/mysql.png" alt="MySQL" title="MySQL"></div>
+                <div class="icono"><img src="img/tecnologias/docker.png" alt="Docker" title="Docker"></div>
+                <div class="icono"><img src="img/tecnologias/python.png" alt="Python" title="Python"></div>
+                <div class="icono"><img src="img/tecnologias/wordpress.png" alt="WordPress" title="WordPress"></div>
+            </div>
+        </section>
+        <!--Proyectos-->
+        <section id="proyectos" class="proyectos">
+            <h1>Proyecto destacado</h1>
+            <div class="proyecto-card">
+                <h2>Sabores Peruanos</h2>
+                <img src="img/bar_sabores.png" alt="ejemplo de proyecto" class="img-proyecto">
+                <div class="tecnologias-proyecto">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                    <span>Docker</span>
+                    <span>Bootstrap</span>
+                </div>
+                <a href="https://github.com/milagrosrubio/SaboresPeruanos" class="btn-proyecto">Ver código</a>
+            </div>
+        </section>
+        <!--Contacto-->
+        <section id="contacto" class="contacto">
+            <h1>Contáctame</h1>
+            <form id="form-contacto" action="https://formspree.io/f/mkgzqgbq" method="POST" class="form-contacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="name" required />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="message" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+                <p id="respuesta" style="display:none; margin-top:1rem; color:#6a1a71; font-weight:600;"></p>
+            </form>
+        </section>
+        <script src="contacto.js"></script>
+        <!-- Footer -->
+         <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Milagros del Rosario Rubio Fiestas</p>
+        </div>
+    </footer>
+
+    </main>
+
+
+
+</body>
+
+</html>
